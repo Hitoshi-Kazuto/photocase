@@ -23,7 +23,7 @@ const App = () => {
   // You can replace these with your actual information
   const personalInfo = {
     name: "Ayush Shukla",
-    bio: "A brief description about yourself. You can write about your interests, skills, or anything you'd like people to know about you.",
+    bio: "Koinophobic",
     email: "ayushshukla8540@gmail.com",
     location: "Noida, India",
     phone: "+91 9310063048",
