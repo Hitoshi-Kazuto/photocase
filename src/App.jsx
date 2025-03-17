@@ -18,6 +18,7 @@ import Image14 from './assets/14.png';
 import Image15 from './assets/15.png';
 import Image16 from './assets/16.png';
 import Image17 from './assets/17.png';
+import profilePhoto from './assets/profile.png'
 
 const App = () => {
   // You can replace these with your actual information
@@ -27,36 +28,44 @@ const App = () => {
     email: "ayushshukla8540@gmail.com",
     location: "Noida, India",
     phone: "+91 9310063048",
-    vsco: "https://vsco.co/ayushhshuklaa" 
+    vsco: "https://vsco.co/ayushhshuklaa",
   };
 
   // Add your image paths here
   const imagePaths = [
-    { src: Image1, alt: 'Gallery image 1' },
+    { src: Image10, alt: 'Gallery image 1' },
     { src: Image2, alt: 'Gallery image 2' },
     { src: Image3, alt: 'Gallery image 3' },
-    { src: Image4, alt: 'Gallery image 4' },
+    { src: Image17, alt: 'Gallery image 4' },
     { src: Image5, alt: 'Gallery image 5' },
     { src: Image6, alt: 'Gallery image 6' },
     { src: Image7, alt: 'Gallery image 7' },
     { src: Image8, alt: 'Gallery image 8' },
     { src: Image9, alt: 'Gallery image 9' },
-    { src: Image10, alt: 'Gallery image 10' },
+    { src: Image1, alt: 'Gallery image 10' },
     { src: Image11, alt: 'Gallery image 11' },
     { src: Image12, alt: 'Gallery image 12' },
     { src: Image13, alt: 'Gallery image 13' },
     { src: Image14, alt: 'Gallery image 14' },
     { src: Image15, alt: 'Gallery image 15' },
     { src: Image16, alt: 'Gallery image 16' },
-    { src: Image17, alt: 'Gallery image 17' },
+    { src: Image4, alt: 'Gallery image 17' },
   ];
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       {/* Header with personal information */}
       <header className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6 mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">{personalInfo.name}</h1>
-        <p className="text-gray-600 mt-2 mb-4">{personalInfo.bio}</p>
+        {/* Profile Photo */}
+        <div className="flex justify-center mb-4">
+          <img 
+            src={profilePhoto} 
+            alt="Profile" 
+            className="w-32 h-32 rounded-full border-2 border-gray-300 shadow-md object-cover" 
+          />
+        </div>
+        <h1 className="text-3xl font-bold text-gray-800 text-center">{personalInfo.name}</h1>
+        <p className="text-gray-600 mt-2 mb-4 text-center">{personalInfo.bio}</p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
           <div className="flex items-center">
