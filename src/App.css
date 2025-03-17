@@ -1,0 +1,47 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif; /* Use a modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background */
+  color: #333; /* Dark text for contrast */
+}
+
+.portfolio-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white; /* White background for the portfolio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-title {
+  font-size: 2.5em; /* Larger title */
+  margin: 0;
+}
+
+.portfolio-subtitle {
+  font-size: 1.2em; /* Subtitle size */
+  color: #666; /* Lighter color for subtitle */
+}
+
+.portfolio-content {
+  margin: 20px 0;
+}
+
+.portfolio-section {
+  margin-bottom: 20px;
+}
+
+.portfolio-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em; /* Smaller footer text */
+  color: #999; /* Lighter color for footer */
+}
